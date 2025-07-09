@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JWJ Block Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>JWJ Block Game</h1>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="game-ui">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="controls">
+                <button id="newGameButton">New Game</button>
+                <button id="pauseButton">Pause</button>
+            </div>
+            <div class="lives">Lives: <span id="lives">3</span></div>
+        </div>
+    </div>
+    <div id="controlsInfo">
+        Controls: Mouse or [A]/[D] or [←]/[→] | [P] to Pause
+    </div>
+    <div id="startScreen" class="game-overlay">
+        <h2>Classic Breakout</h2>
+        <button id="startButton">Start Game</button>
+    </div>
+    <div id="gameOverScreen" class="game-overlay" style="display: none;">
+        <h2>Game Over</h2>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <button id="restartButton">Restart Game</button>
+    </div>
+     <div id="gameClearScreen" class="game-overlay" style="display: none;">
+        <h2>Congratulations!</h2>
+        <p>You cleared all the bricks!</p>
+        <p>Your Score: <span id="clearScore">0</span></p>
+        <button id="nextLevelButton">Next Level</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
